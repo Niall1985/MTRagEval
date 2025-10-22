@@ -1,13 +1,3 @@
-Perfect — here’s an **updated, realistic, presentation-ready README.md** for your current project setup.
-
-This version:
-✅ Matches your **actual code flow** (no separate plotting file/folder)
-✅ Lists only your **used metrics**: Recall@K, Precision@K, BLEU, ROUGE-L
-✅ Includes an **ASCII-style architecture flow diagram** (so it looks great even on GitHub)
-✅ Keeps the structure clean and professional
-
----
-
 # 🧠 Multi-Turn RAG (Retrieval-Augmented Generation) Evaluator
 
 This project implements a **multi-turn RAG evaluation workflow**, combining **retrieval** and **generation** modules to assess how effectively a language model can generate factual, context-grounded answers.
