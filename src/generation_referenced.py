@@ -15,8 +15,8 @@ DATA_FILE = Path(os.getenv('corpus_file'))
 OUTPUT_FILE = Path("./outputs/generation_reference.jsonl")
 
 
-with open(os.getenv('datafile'), "r", encoding='utf-8') as f:
-    data = f.read()
+# with open(os.getenv('datafile'), "r", encoding='utf-8') as f:
+#     data = f.read()
 
 # Configure Gemini API
 genai.configure(api_key=os.getenv('gemini_api'))
@@ -36,10 +36,9 @@ Answer:"""
     return response.text
 
 
-def reference_based_generation(query):
+def reference_based_generation(query, data):
 
-    summary = summarizer_func(data)
-    generated_answer = generator_using_reference(query, summary)
+    generated_answer = generator_using_reference(query, data)
     # print(generated_answer)
     # print(summary)
     return generated_answer
